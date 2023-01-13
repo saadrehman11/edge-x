@@ -17,7 +17,15 @@ $product_id = $_GET['id'];
     <!-- Breadcrumb End -->
 
 <?php
+$count_res = mysqli_num_rows(mysqli_query($con,"select * from products where id='$product_id'"));
+
+if($count_res == 0){
+    echo '<h1>404</h1>';
+    die();
+}
 $check_product = mysqli_fetch_array(mysqli_query($con,"select * from products where id='$product_id'"));
+
+
 ?>
     <!-- Shop Detail Start -->
     <div class="container-fluid pb-5">
