@@ -1,7 +1,11 @@
 <?php
 include 'includes/header.php';
 ?>
-
+<style>
+    .product-item{
+        min-height: 585px!important ;
+    }
+</style>
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
@@ -153,7 +157,7 @@ include 'includes/header.php';
                     <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="<?=$row['file_path']?>" alt="">
+                                <img class="img-fluid w-100" src="<?=$row['file_path']?>" alt="" style="height:400px; width:400px;">
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                                     <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
